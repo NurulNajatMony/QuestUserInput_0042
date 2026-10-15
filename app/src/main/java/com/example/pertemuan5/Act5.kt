@@ -16,6 +16,8 @@ import androidx.compose.ui.unit.dp
 fun FormDataDiri(modifier: Modifier) {
     var textNama by remember { mutableStateOf("") }
     var textAlamat by remember { mutableStateOf("") }
+    var testJK by remember { mutableStateOf("") }
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
 
     Column(
         modifier = modifier.padding(top = 50.dp),
