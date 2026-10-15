@@ -125,6 +125,7 @@ fun FormDataDiri(modifier: Modifier) {
                 modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp)
             ) {
                 Text(text = "Nama : "+nama, color = Color.White)
+                Text(text = "Gender : "+jenis, color = Color.White)
             }
         }
     }
