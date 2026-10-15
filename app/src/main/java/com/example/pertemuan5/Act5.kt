@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun FormDataDiri(modifier: Modifier) {
     var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
 
     Column(
         modifier = modifier.padding(top = 50.dp),
