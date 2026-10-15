@@ -3,9 +3,11 @@ package com.example.pertemuan5
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -87,5 +89,17 @@ fun FormDataDiri(modifier: Modifier) {
             thickness = dimensionResource(id = R.dimen.divider_tipis),
             color = Color.DarkGray
         )
+
+        Button(
+            modifier = Modifier.fillMaxWidth(fraction = 1f),
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                jenis = testJK
+                alamat = textAlamat
+            }
+        ) {
+            Text(text = "Submit")
+        }
     }
 }
